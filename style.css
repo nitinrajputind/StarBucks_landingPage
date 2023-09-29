@@ -287,3 +287,90 @@ header{
 .contact p{
     text-align: center;
 }
+
+@media screen and (max-width : 1150px) {
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width : 991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    header{
+        padding: 18px 7%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex; 
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14, 55, 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active{
+        top: 100%;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text span{
+        font-size: 0.9rem ;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .home-text h2{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width : 768px){
+    .home-text{
+        padding-top: inherit;
+    }
+    .shop-contanier .box{
+        margin-top: 6rem;
+    }
+    .heading h1{
+        font-size: 1.5rem;
+    }
+    .heading span{
+        font-size: 0.9rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width : 364px) {
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+}
